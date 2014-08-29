@@ -3,14 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package guitest;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.control.SplitPane;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.StackPane;
 
 /**
  * FXML Controller class
@@ -18,6 +23,7 @@ import javafx.scene.layout.GridPane;
  * @author edennis
  */
 public class MainMenuController implements Initializable {
+
     @FXML
     private GridPane paneMenu;
 
@@ -26,7 +32,9 @@ public class MainMenuController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+
+       
         // TODO
-    }    
-    
+    }
+
 }

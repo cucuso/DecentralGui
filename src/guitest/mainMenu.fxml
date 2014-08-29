@@ -1,34 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
 <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guitest.MainMenuController">
    <children>
-      <SplitPane prefHeight="160.0" prefWidth="200.0">
+      <SplitPane dividerPositions="0.2608695652173913" prefHeight="160.0" prefWidth="200.0" stylesheets="css/test.css">
         <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
-        </items>
-      </SplitPane>
-      <SplitPane dividerPositions="0.2608695652173913" prefHeight="160.0" prefWidth="200.0">
-        <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="150.0" style="-fx-background-color: DCDCDC;">
+          <AnchorPane maxWidth="170.0" minHeight="0.0" minWidth="170.0" prefHeight="398.0" prefWidth="150.0" style="-fx-background-color: DCDCDC;">
                <children>
                   <GridPane fx:id="paneMenu" layoutX="20.0" layoutY="115.0" prefHeight="269.0" prefWidth="135.0">
                      <children>
-                        <Button mnemonicParsing="false" text="Overview">
-                           <GridPane.margin>
-                              <Insets />
-                           </GridPane.margin>
-                        </Button>
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Deposit" GridPane.rowIndex="1" />
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Buy" GridPane.rowIndex="3" />
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Sell" GridPane.rowIndex="4" />
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Settings" GridPane.rowIndex="5" />
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Send" GridPane.rowIndex="2" />
+                        <Hyperlink text="Overview" />
+                        <Hyperlink text="Deposit" GridPane.rowIndex="1" />
+                        <Hyperlink text="Send" GridPane.rowIndex="2" />
+                        <Hyperlink text="Buy" GridPane.rowIndex="3" />
+                        <Hyperlink text="Sell" GridPane.rowIndex="4" />
+                        <Hyperlink text="Settings" GridPane.rowIndex="5" />
                      </children>
                      <columnConstraints>
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
@@ -44,7 +35,7 @@
                   </GridPane>
                </children>
             </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="438.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="418.0">
                <children>
                   <Label layoutX="181.0" layoutY="207.0" text="You're Logged in!" />
                </children>
